@@ -1,559 +1,789 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The Global Power Interview — Harshit Gill. From Chandigarh to the United States.">
-<meta property="og:title" content="The Global Power Interview — Harshit Gill">
-<title>The Global Power Interview — Harshit Gill</title>
+CREATE A COMPLETE, PREMIUM, PRODUCTION-QUALITY SINGLE-PAGE WEBSITE.
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+FILE:
+index.html
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:#090909;
-  color:#f2f0e9;
-  font-family:"DM Sans",sans-serif;
-  line-height:1.6;
-}
-a{text-decoration:none;color:inherit}
-img{display:block;width:100%;object-fit:cover}
-.container{width:min(1180px,90%);margin:auto}
-.gold{color:#c9a45c}
-.serif{font-family:"Playfair Display",serif}
+IMPORTANT:
+Generate actual working HTML, CSS and JavaScript inside index.html.
+Do NOT display this prompt as webpage text.
+Do NOT create a plain-text page.
+Do NOT create a generic template.
 
-nav{
-  position:fixed;top:0;left:0;width:100%;z-index:20;
-  padding:22px 5%;
-  display:flex;align-items:center;justify-content:space-between;
-  border-bottom:1px solid rgba(255,255,255,.12);
-  background:rgba(9,9,9,.72);
-  backdrop-filter:blur(15px);
-}
-.logo{font-family:"Playfair Display",serif;font-size:21px;letter-spacing:2px}
-.navlinks{display:flex;gap:28px;font-size:11px;letter-spacing:1.5px}
-.navlinks a{opacity:.75;transition:.3s}
-.navlinks a:hover{opacity:1;color:#c9a45c}
-.edition{font-size:10px;letter-spacing:1.5px;color:#aaa}
+==================================================
+BRAND
+==================================================
 
-.hero{
-  min-height:100vh;
-  position:relative;
-  display:flex;
-  align-items:flex-end;
-  overflow:hidden;
-}
-.hero img{
-  position:absolute;inset:0;height:100%;
-  filter:brightness(.48);
-}
-.hero:after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(transparent 25%,rgba(0,0,0,.95) 100%);
-}
-.hero-content{
-  position:relative;z-index:2;
-  width:min(1180px,90%);margin:0 auto;
-  padding:160px 0 80px;
-}
-.kicker{
-  color:#c9a45c;font-size:11px;
-  letter-spacing:3px;margin-bottom:18px;
-}
-.hero h1{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(65px,12vw,160px);
-  line-height:.82;
-  font-weight:500;
-  letter-spacing:-5px;
-  max-width:900px;
-}
-.hero-sub{
-  margin-top:30px;max-width:580px;
-  font-size:18px;color:#d0cec7;
-}
-.hero-meta{
-  display:flex;gap:35px;margin-top:28px;
-  font-size:10px;letter-spacing:2px;color:#aaa;
-}
-.networth{
-  margin-top:35px;
-  display:inline-block;
-  border-left:2px solid #c9a45c;
-  padding-left:20px;
-}
-.networth strong{
-  display:block;
-  font-family:"Playfair Display",serif;
-  font-size:48px;line-height:1;
-}
-.networth span{
-  display:block;margin-top:8px;
-  font-size:10px;letter-spacing:2px;color:#aaa;
-}
-.buttons{margin-top:35px;display:flex;gap:14px}
-.btn{
-  display:inline-block;padding:14px 24px;
-  border:1px solid rgba(255,255,255,.35);
-  font-size:10px;letter-spacing:2px;
-  transition:.3s;
-}
-.btn:hover{background:#c9a45c;color:#080808;border-color:#c9a45c}
+WEBSITE NAME:
 
-section{padding:120px 0}
-.section-label{
-  font-size:10px;letter-spacing:3px;color:#c9a45c;
-  margin-bottom:20px;
-}
-.big-title{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(45px,7vw,95px);
-  line-height:.95;font-weight:500;
-  letter-spacing:-3px;
-}
-.intro-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:70px;align-items:center;
-}
-.intro-img{height:620px}
-.copy{color:#aaa;font-size:16px;max-width:500px}
-.copy p{margin-bottom:20px}
+THE GLOBAL POWER INTERVIEW
 
-.divider{
-  height:1px;background:rgba(255,255,255,.13);
-  margin:0 auto;width:90%;
-}
+MAIN FEATURED PROFILE:
 
-.story-head{text-align:center;margin-bottom:80px}
-.story-head p{color:#888;margin-top:20px}
+HARSHIT GILL
 
-.interview{
-  padding:100px 0;
-}
-.interview-grid{
-  display:grid;grid-template-columns:1.15fr .85fr;
-  gap:70px;align-items:start;
-}
-.interview:nth-of-type(even) .interview-grid{
-  grid-template-columns:.85fr 1.15fr;
-}
-.interview:nth-of-type(even) .photo-wrap{order:2}
-.photo-wrap img{height:650px}
-.interview-number{
-  font-size:10px;letter-spacing:3px;color:#c9a45c;
-}
-.interview h2{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(40px,5vw,72px);
-  line-height:1;margin:18px 0 25px;
-  font-weight:500;
-}
-.metadata{
-  color:#777;font-size:9px;letter-spacing:2px;
-  margin-bottom:40px;
-}
-.qa{border-top:1px solid rgba(255,255,255,.13)}
-.question{
-  padding:24px 0 7px;
-  font-size:11px;letter-spacing:1px;
-  color:#c9a45c;text-transform:uppercase;
-}
-.answer{
-  color:#aaa;font-size:15px;padding-bottom:20px;
-}
-.read{margin-top:25px;color:#f2f0e9;font-size:10px;letter-spacing:2px}
+MAIN STORY:
 
-.quote{
-  background:#111;
-  text-align:center;padding:150px 8%;
-}
-.quote h2{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(40px,6vw,80px);
-  line-height:1.05;font-weight:400;
-  max-width:1000px;margin:auto;
-}
-.quote small{
-  display:block;margin-top:30px;
-  color:#c9a45c;letter-spacing:3px;font-size:9px;
-}
+Harshit Gill, age 20, from Chandigarh, India, who moved to the United States and built a global business empire.
 
-.map-section{background:#0d0d0d}
-.map-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:60px;align-items:center;
-}
-.map{
-  position:relative;
-  height:520px;
-  border:1px solid rgba(255,255,255,.12);
-  background:
-    radial-gradient(circle at 45% 35%,rgba(201,164,92,.13),transparent 30%),
-    #111;
-  overflow:hidden;
-}
-.map:before{
-  content:"FLORIDA";
-  position:absolute;inset:0;
-  display:flex;align-items:center;justify-content:center;
-  font-family:"Playfair Display",serif;
-  font-size:80px;color:rgba(255,255,255,.035);
-  transform:rotate(-12deg);
-}
-.state-line{
-  position:absolute;
-  width:230px;height:390px;
-  border-right:2px solid rgba(201,164,92,.55);
-  border-bottom:2px solid rgba(201,164,92,.55);
-  border-radius:0 0 65% 35%;
-  transform:rotate(12deg);
-  left:40%;top:12%;
-}
-.pin{
-  position:absolute;width:10px;height:10px;
-  background:#c9a45c;border-radius:50%;
-  box-shadow:0 0 0 6px rgba(201,164,92,.12);
-}
-.pin span{
-  position:absolute;left:18px;top:-7px;
-  white-space:nowrap;font-size:9px;
-  letter-spacing:1px;color:#ddd;
-}
-.p1{left:53%;top:27%}.p2{left:59%;top:34%}
-.p3{left:48%;top:40%}.p4{left:57%;top:47%}
-.p5{left:43%;top:61%}
+IMPORTANT:
+Treat biography, net worth and interview material as editorial/profile content unless independently verified. Do not fabricate real-world interviews, quotes, endorsements, companies, political relationships or ownership claims.
 
-.locations{margin-top:35px}
-.location{
-  padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1);
-  display:flex;justify-content:space-between;
-  font-size:11px;letter-spacing:1.5px;
-}
-.location b{font-weight:500}.location span{color:#777}
+==================================================
+VISUAL IDENTITY
+==================================================
 
-.latest-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);
-  border-top:1px solid rgba(255,255,255,.13);
-}
-.latest{
-  padding:35px;border-bottom:1px solid rgba(255,255,255,.13);
-  transition:.3s;
-}
-.latest:nth-child(odd){border-right:1px solid rgba(255,255,255,.13)}
-.latest:hover{background:#111}
-.latest small{color:#c9a45c;letter-spacing:2px}
-.latest h3{
-  font-family:"Playfair Display",serif;
-  font-size:32px;font-weight:400;margin:12px 0;
-}
-.latest p{color:#777;font-size:14px}
+Create an extremely premium international editorial website.
 
-.about{
-  border-top:1px solid rgba(255,255,255,.13);
-}
-.about-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:80px;
-}
-.about-copy{font-size:20px;color:#aaa}
+Style:
+- Black / charcoal background
+- Ivory-white text
+- Restrained luxury gold accents
+- Elegant serif display typography
+- Modern clean sans-serif body typography
+- Cinematic photography
+- Huge magazine-style headlines
+- Thin editorial borders
+- Sophisticated spacing
+- High-end international publication aesthetic
+- Subtle animations
+- Smooth scrolling
 
-footer{
-  padding:70px 5%;
-  border-top:1px solid rgba(255,255,255,.12);
-}
-.footer-top{
-  display:flex;justify-content:space-between;
-  gap:30px;
-}
-.footer-logo{
-  font-family:"Playfair Display",serif;
-  font-size:50px;
-}
-.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:10px;letter-spacing:1px;color:#aaa}
-.disclaimer{
-  margin-top:55px;padding-top:25px;
-  border-top:1px solid rgba(255,255,255,.1);
-  color:#555;font-size:10px;
-}
+The website should feel like:
+- luxury business magazine
+- international affairs publication
+- billionaire cover story
+- global leadership journal
+- premium editorial website
 
-@media(max-width:800px){
-  nav{padding:18px 5%}
-  .navlinks{display:none}
-  .hero h1{letter-spacing:-3px}
-  .hero-sub{font-size:15px}
-  .hero-meta{gap:15px;flex-wrap:wrap}
-  .networth strong{font-size:40px}
-  section{padding:80px 0}
-  .intro-grid,.interview-grid,.map-grid,.about-grid{
-    grid-template-columns:1fr!important;
-    gap:40px;
-  }
-  .interview:nth-of-type(even) .photo-wrap{order:0}
-  .photo-wrap img,.intro-img{height:450px}
-  .latest-grid{grid-template-columns:1fr}
-  .latest:nth-child(odd){border-right:0}
-  .footer-top{flex-direction:column}
-  .footer-logo{font-size:40px}
-  .map{height:430px}
-}
-</style>
-</head>
+Do NOT make it look like:
+- generic AI website
+- SaaS landing page
+- cheap billionaire website
+- ordinary blog
+- basic portfolio
+- excessive glassmorphism
+- excessive rounded cards
+- neon design
+- excessive gradients
+- cheesy luxury graphics
 
-<body>
+==================================================
+CRITICAL IMAGE REQUIREMENT
+==================================================
 
-<nav>
-  <a href="#" class="logo">GLOBAL POWER</a>
-  <div class="navlinks">
-    <a href="#interviews">INTERVIEWS</a>
-    <a href="#billionaires">BILLIONAIRES</a>
-    <a href="#leaders">LEADERS</a>
-    <a href="#business">BUSINESS</a>
-    <a href="#influence">INFLUENCE</a>
-  </div>
-  <div class="edition">GLOBAL EDITION / 2026</div>
-</nav>
+THE FOLLOWING FIVE DIRECT IMAGE URLs MUST BE USED AS ACTUAL VISIBLE IMAGES.
 
-<header class="hero">
-  <img src="https://kommodo.ai/i/XQVpgl8YCvgnpGfLAJSG" alt="Harshit Gill editorial portrait">
-  <div class="hero-content">
-    <div class="kicker">THE GLOBAL POWER INTERVIEW</div>
-    <h1>HARSHIT<br>GILL</h1>
-    <div class="hero-sub">
-      FROM CHANDIGARH TO GLOBAL POWER
-    </div>
-    <div class="hero-meta">
-      <span>AGE 20</span>
-      <span>USA / GLOBAL</span>
-      <span>EDITORIAL PROFILE</span>
-    </div>
-    <div class="networth">
-      <strong>$890M</strong>
-      <span>ESTIMATED NET WORTH</span>
-    </div>
-    <div class="buttons">
-      <a class="btn" href="#interviews">READ THE INTERVIEW →</a>
-      <a class="btn" href="#story">EXPLORE HIS STORY</a>
-    </div>
-  </div>
-</header>
+PHOTO 1:
+https://i.ibb.co/Cp7rRpp2/SAVE-20260911-022222.jpg
 
-<section id="story">
-  <div class="container">
-    <div class="intro-grid">
-      <img class="intro-img" src="https://kommodo.ai/i/j8vra3yfmbhCOoHjhc6a" alt="Harshit Gill">
-      <div>
-        <div class="section-label">01 / THE ORIGIN STORY</div>
-        <h2 class="big-title">FROM<br>CHANDIGARH<br>TO AMERICA</h2>
-        <div class="copy" style="margin-top:30px">
-          <p>At 20, Harshit Gill represents a generation that thinks beyond borders — carrying ambition from Chandigarh to the United States.</p>
-          <p>His story is framed around ambition, adaptation, entrepreneurship and the pursuit of a global future.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+PHOTO 2:
+https://i.ibb.co/hxy2qDPz/SAVE-20260911-022227.jpg
 
-<div class="divider"></div>
+PHOTO 3:
+https://i.ibb.co/b5QFmtwk/SAVE-20260911-022234.jpg
 
-<section id="billionaires">
-  <div class="container">
-    <div class="intro-grid">
-      <div>
-        <div class="section-label">02 / THE EMPIRE</div>
-        <h2 class="big-title">BUILDING<br>THE EMPIRE</h2>
-        <div class="copy" style="margin-top:30px">
-          <p>Business is built through decisions made long before the results become visible.</p>
-          <p>The editorial explores the mindset behind international ambition, opportunity, leadership and long-term vision.</p>
-        </div>
-      </div>
-      <img class="intro-img" src="https://kommodo.ai/i/T2AgErneHI0eOBMTjTIH" alt="Harshit Gill business portrait">
-    </div>
-  </div>
-</section>
+PHOTO 4:
+https://i.ibb.co/7x1DRXzx/SAVE-20260911-022242.jpg
 
-<section class="quote">
-  <h2>“Power is not only measured by wealth, but by the ability to shape what comes next.”</h2>
-  <small>THE GLOBAL POWER EDITORIAL</small>
-</section>
+PHOTO 5:
+https://i.ibb.co/QFC3Rk6Q/SAVE-20260911-022307.jpg
 
-<section id="interviews">
-  <div class="container">
-    <div class="story-head">
-      <div class="section-label">THE COVER STORY</div>
-      <h2 class="big-title">FIVE<br>INTERVIEWS</h2>
-      <p>Five perspectives. One global story.</p>
-    </div>
-  </div>
+VERY IMPORTANT:
+- Use these EXACT URLs inside HTML <img src=""> attributes.
+- Do NOT use https://ibb.co/... page links.
+- Do NOT use the old Kommodo links.
+- Do NOT replace the photos.
+- Do NOT use stock photos.
+- Do NOT generate replacement photos.
+- Do NOT use placeholders.
+- Do NOT display the image URLs as visible text.
+- Do NOT hide the images behind overlays.
+- Keep the exact order.
+- Use normal HTML <img> elements.
+- Do NOT use Next.js Image.
+- Make the images responsive.
+- Use object-fit: cover.
+- Use loading="eager" for the hero image.
+- Use loading="lazy" for other images.
+- Give every image an alt attribute.
 
-  <!-- INTERVIEW 1 -->
-  <article class="interview">
-    <div class="container">
-      <div class="interview-grid">
-        <div class="photo-wrap">
-          <img src="https://kommodo.ai/i/XQVpgl8YCvgnpGfLAJSG" alt="Harshit Gill — Interview">
-        </div>
-        <div>
-          <div class="interview-number">INTERVIEW 01</div>
-          <h2>THE MIND<br>BEHIND THE<br>FORTUNE</h2>
-          <div class="metadata">EDITORIAL INTERVIEW / GLOBAL EDITION / 2026</div>
-          <div class="qa">
-            <div class="question">What does wealth mean to you?</div>
-            <div class="answer">Wealth is ultimately about freedom, responsibility and the ability to build something that lasts.</div>
-            <div class="question">What was the biggest turning point?</div>
-            <div class="answer">Learning to think beyond immediate results and focus on opportunities that could compound over time.</div>
-            <div class="question">What separates successful people?</div>
-            <div class="answer">Consistency. Ambition matters, but the ability to keep moving when the outcome is uncertain matters even more.</div>
-            <div class="question">What does global influence mean?</div>
-            <div class="answer">It means being able to create ideas and businesses that can matter beyond a single city or country.</div>
-            <div class="question">What legacy matters most?</div>
-            <div class="answer">Building something meaningful and creating opportunities for the people who come after you.</div>
-          </div>
-          <div class="read">READ FULL INTERVIEW →</div>
-        </div>
-      </div>
-    </div>
-  </article>
+Required implementation example:
 
-  <div class="divider"></div>
+<img
+src="https://i.ibb.co/Cp7rRpp2/SAVE-20260911-022222.jpg"
+alt="Harshit Gill"
+loading="eager"
+>
 
-  <!-- INTERVIEW 2 -->
-  <article class="interview">
-    <div class="container">
-      <div class="interview-grid">
-        <div class="photo-wrap">
-          <img src="https://kommodo.ai/i/j8vra3yfmbhCOoHjhc6a" alt="Harshit Gill — Chandigarh to America">
-        </div>
-        <div>
-          <div class="interview-number">INTERVIEW 02</div>
-          <h2>FROM CHANDIGARH<br>TO THE WORLD</h2>
-          <div class="metadata">ORIGINS / AMERICA / GLOBAL VISION</div>
-          <div class="qa">
-            <div class="question">What did Chandigarh teach you?</div>
-            <div class="answer">It gave me a foundation — ambition, resilience and the belief that where you begin does not have to define where you finish.</div>
-            <div class="question">Why America?</div>
-            <div class="answer">America represented scale, opportunity and the chance to think internationally from an early stage.</div>
-            <div class="question">Was the transition difficult?</div>
-            <div class="answer">Every major transition demands adaptation. The challenge is turning uncertainty into momentum.</div>
-            <div class="question">What changed after the move?</div>
-            <div class="answer">The perspective became much larger. The focus shifted from local possibilities to global opportunities.</div>
-            <div class="question">What advice would you give your younger self?</div>
-            <div class="answer">Start early, learn constantly and do not confuse speed with progress.</div>
-          </div>
-          <div class="read">READ FULL INTERVIEW →</div>
-        </div>
-      </div>
-    </div>
-  </article>
+The remaining four images must be implemented exactly the same way using their exact URLs.
 
-  <div class="divider"></div>
+==================================================
+NAVIGATION
+==================================================
 
-  <!-- INTERVIEW 3 -->
-  <article class="interview">
-    <div class="container">
-      <div class="interview-grid">
-        <div class="photo-wrap">
-          <img src="https://kommodo.ai/i/T2AgErneHI0eOBMTjTIH" alt="Harshit Gill — Global Empire">
-        </div>
-        <div>
-          <div class="interview-number">INTERVIEW 03</div>
-          <h2>BUILDING<br>A GLOBAL<br>EMPIRE</h2>
-          <div class="metadata">BUSINESS / STRATEGY / LEADERSHIP</div>
-          <div class="qa">
-            <div class="question">What makes a business scalable?</div>
-            <div class="answer">A clear system, strong people and the discipline to keep improving the fundamentals.</div>
-            <div class="question">How do you approach opportunities?</div>
-            <div class="answer">Look beyond the obvious. The best opportunities often appear where industries and ideas overlap.</div>
-            <div class="question">What makes a great leader?</div>
-            <div class="answer">Clarity, accountability and the ability to make difficult decisions without losing sight of the bigger picture.</div>
-            <div class="question">What is your approach to risk?</div>
-            <div class="answer">Understand the downside first, then decide whether the potential upside justifies taking the risk.</div>
-            <div class="question">What is the long-term goal?</div>
-            <div class="answer">To build an international platform that can continue evolving with the world.</div>
-          </div>
-          <div class="read">READ FULL INTERVIEW →</div>
-        </div>
-      </div>
-    </div>
-  </article>
+Create a sticky premium navigation bar.
 
-  <div class="divider"></div>
+Left:
 
-  <!-- INTERVIEW 4 -->
-  <article class="interview">
-    <div class="container">
-      <div class="interview-grid">
-        <div class="photo-wrap">
-          <img src="https://kommodo.ai/i/csmgIxiZmYq0Smfdo7vR" alt="Harshit Gill — Wealth and Influence">
-        </div>
-        <div>
-          <div class="interview-number">INTERVIEW 04</div>
-          <h2>WEALTH,<br>INFLUENCE<br>& THE FUTURE</h2>
-          <div class="metadata">WEALTH / TECHNOLOGY / FUTURE</div>
-          <div class="qa">
-            <div class="question">Is money the ultimate goal?</div>
-            <div class="answer">Money can create options, but purpose determines what those options are ultimately used for.</div>
-            <div class="question">Where is the biggest opportunity?</div>
-            <div class="answer">Technology, international business and industries that are being transformed by new ways of thinking.</div>
-            <div class="question">What does influence require?</div>
-            <div class="answer">Credibility. Influence that lasts is earned through consistent actions rather than attention alone.</div>
-            <div class="question">How will technology change wealth?</div>
-            <div class="answer">It will continue lowering barriers to scale while creating entirely new categories of opportunity.</div>
-            <div class="question">What responsibility comes with success?</div>
-            <div class="answer">The responsibility to use resources thoughtfully and create value beyond yourself.</div>
-          </div>
-          <div class="read">READ FULL INTERVIEW →</div>
-        </div>
-      </div>
-    </div>
-  </article>
+GLOBAL POWER
 
-  <div class="divider"></div>
+Navigation:
 
-  <!-- INTERVIEW 5 -->
-  <article class="interview">
-    <div class="container">
-      <div class="interview-grid">
-        <div class="photo-wrap">
-          <img src="https://kommodo.ai/i/L5FNrstqvXi7XVNys9EQ" alt="Harshit Gill — Next Era">
-        </div>
-        <div>
-          <div class="interview-number">INTERVIEW 05</div>
-          <h2>THE NEXT ERA<br>OF GLOBAL<br>POWER</h2>
-          <div class="metadata">FUTURE / LEGACY / GLOBAL VISION</div>
-          <div class="qa">
-            <div class="question">What does the next decade look like?</div>
-            <div class="answer">Faster, more connected and increasingly global. The biggest advantage will belong to people who can adapt.</div>
-            <div class="question">What are you building toward?</div>
-            <div class="answer">A future where the scale of the opportunity is not limited by geography.</div>
-            <div class="question">What does legacy mean at 20?</div>
-            <div class="answer">Legacy is not something you wait to think about. It is created through every decision made today.</div>
-            <div class="question">What is the biggest lesson so far?</div>
-            <div class="answer">Think long term, stay curious and never stop improving your ability to execute.</div>
-            <div class="question">What comes next?</div>
-            <div class="answer">The next chapter is about turning ambition into something that can operate at a truly global scale.</div>
-          </div>
-          <div class="read">READ FULL INTERVIEW →</div>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
+INTERVIEWS
+BILLIONAIRES
+LEADERS
+BUSINESS
+INFLUENCE
+ABOUT
 
-<section id="leaders" class="map-section">
-  <div class="container">
-    <div class="map-grid">
-      <div>
-        <div class="section-label">GLOBAL POLITICAL POWER</div>
-        <h2 class="big-title">GLOBAL<br>LEADERS</h2>
-        <div class="copy" style="margin-top:30px">
-          <p>Power, policy and influence across borders.</p>
-          <p>This editorial section explores international leadership, diplomacy and the forces shaping the global political landscape.</p>
-        </div>
-        <a class="btn" href="#leaders" style="margin-top:20px">VIEW GLOBAL LEADERS →</a>
-      </div>
-      <div>
-        <div class="section-label">FLORIDA / LUXURY MAP</div>
-        <h3 class="serif" style="font-size:35px;font-weight:400"
+Right:
+
+GLOBAL EDITION / 2026
+
+Also add an Instagram icon in the navigation.
+
+Instagram username:
+
+@harshit.gill1
+
+Instagram link:
+
+https://www.instagram.com/harshit.gill1/
+
+Requirements:
+- Use a clean Instagram outline icon.
+- Make the icon clickable.
+- Clicking it opens the Instagram profile in a new browser tab.
+- Do not show the raw URL.
+- Make the icon match the luxury black/gold editorial design.
+- On mobile, keep Instagram accessible inside the mobile menu.
+
+==================================================
+HERO
+==================================================
+
+Use PHOTO 1:
+
+https://i.ibb.co/Cp7rRpp2/SAVE-20260911-022222.jpg
+
+Make it a full-screen cinematic hero.
+
+The photograph MUST be clearly visible.
+
+Small label:
+
+THE GLOBAL POWER INTERVIEW
+
+Huge headline:
+
+HARSHIT
+GILL
+
+This must be one of the largest elements on the homepage.
+
+Underneath:
+
+FROM CHANDIGARH
+TO GLOBAL POWER
+
+Metadata:
+
+AGE 20
+USA / GLOBAL
+GLOBAL EDITION / 2026
+
+Prominent statistic:
+
+$890 MILLION
+
+ESTIMATED NET WORTH
+
+Small label:
+
+EDITORIAL ESTIMATE
+
+Buttons:
+
+READ THE INTERVIEW →
+
+EXPLORE HIS STORY →
+
+Add an elegant scroll indicator.
+
+==================================================
+ORIGIN STORY
+==================================================
+
+Use PHOTO 2:
+
+https://i.ibb.co/hxy2qDPz/SAVE-20260911-022227.jpg
+
+Headline:
+
+FROM CHANDIGARH
+TO AMERICA
+
+Large editorial copy:
+
+“At 20, Harshit Gill represents a generation that thinks beyond borders — carrying ambition from Chandigarh to the United States.”
+
+Build the section around:
+- Chandigarh
+- moving to America
+- ambition
+- adaptation
+- entrepreneurship
+- global vision
+
+Do not invent specific schools, companies, investors or awards.
+
+Create a premium timeline:
+
+CHANDIGARH
+↓
+UNITED STATES
+↓
+FIRST OPPORTUNITY
+↓
+GLOBAL EXPANSION
+↓
+BUILDING THE EMPIRE
+↓
+GLOBAL VISION
+
+==================================================
+BUILDING THE EMPIRE
+==================================================
+
+Use PHOTO 3:
+
+https://i.ibb.co/b5QFmtwk/SAVE-20260911-022234.jpg
+
+Headline:
+
+BUILDING
+THE EMPIRE
+
+Editorial categories:
+
+BUSINESS
+GLOBAL INVESTMENTS
+LONG-TERM VISION
+
+Write sophisticated magazine-style content around entrepreneurship, business strategy, leadership and global opportunities.
+
+Do not fabricate financial transactions or company names.
+
+==================================================
+NET WORTH FEATURE
+==================================================
+
+Create a dramatic standalone section.
+
+Huge:
+
+$890M
+
+ESTIMATED NET WORTH
+
+EDITORIAL ESTIMATE
+
+Categories:
+
+BUSINESS
+INVESTMENTS
+ASSETS
+GLOBAL INTERESTS
+
+Make the number elegant and powerful, not flashy.
+
+==================================================
+FIVE INDIVIDUAL PHOTO INTERVIEWS
+==================================================
+
+IMPORTANT:
+
+Do NOT create a simple photo gallery.
+
+There must be FIVE separate interview chapters.
+
+EVERY PHOTO MUST HAVE ITS OWN INTERVIEW DIRECTLY UNDERNEATH IT.
+
+The image must appear first, followed immediately by:
+- interview number
+- headline
+- metadata
+- Q&A interview
+
+==================================================
+INTERVIEW 01
+==================================================
+
+Use PHOTO 1:
+
+https://i.ibb.co/Cp7rRpp2/SAVE-20260911-022222.jpg
+
+Headline:
+
+THE MIND
+BEHIND THE FORTUNE
+
+Label:
+
+EDITORIAL INTERVIEW
+
+Create five thoughtful Q&A questions about:
+- ambition
+- wealth
+- success
+- decision making
+- global vision
+
+==================================================
+INTERVIEW 02
+==================================================
+
+Use PHOTO 2:
+
+https://i.ibb.co/hxy2qDPz/SAVE-20260911-022227.jpg
+
+Headline:
+
+FROM CHANDIGARH
+TO THE WORLD
+
+Create five separate Q&A questions about:
+- Chandigarh
+- moving to America
+- adapting to a new country
+- ambition
+- building a global future
+
+==================================================
+INTERVIEW 03
+==================================================
+
+Use PHOTO 3:
+
+https://i.ibb.co/b5QFmtwk/SAVE-20260911-022234.jpg
+
+Headline:
+
+BUILDING
+A GLOBAL EMPIRE
+
+Create five separate Q&A questions about:
+- entrepreneurship
+- business strategy
+- international opportunities
+- leadership
+- scaling
+
+==================================================
+INTERVIEW 04
+==================================================
+
+Use PHOTO 4:
+
+https://i.ibb.co/7x1DRXzx/SAVE-20260911-022242.jpg
+
+Headline:
+
+WEALTH,
+INFLUENCE
+& THE FUTURE
+
+Create five separate Q&A questions about:
+- wealth
+- influence
+- technology
+- future markets
+- responsibility
+
+==================================================
+INTERVIEW 05
+==================================================
+
+Use PHOTO 5:
+
+https://i.ibb.co/QFC3Rk6Q/SAVE-20260911-022307.jpg
+
+Headline:
+
+THE NEXT ERA
+OF GLOBAL POWER
+
+Create five separate Q&A questions about:
+- future ambitions
+- global leadership
+- innovation
+- legacy
+- long-term vision
+
+==================================================
+INTERVIEW DESIGN
+==================================================
+
+Make each interview feel like a premium magazine cover story.
+
+Use:
+
+Q.
+Question
+
+A.
+Answer
+
+Use elegant typography.
+
+Desktop:
+alternate layouts:
+IMAGE LEFT / INTERVIEW RIGHT
+IMAGE RIGHT / INTERVIEW LEFT
+
+Mobile:
+IMAGE
+HEADLINE
+METADATA
+QUESTIONS
+ANSWERS
+
+Use large images.
+
+Add generous whitespace.
+
+Add subtle reveal animations.
+
+Do not put the entire interview inside a tiny rounded card.
+
+==================================================
+THE BIG STORY
+==================================================
+
+Create a dramatic section:
+
+20 YEARS OLD.
+ONE COUNTRY BEHIND HIM.
+A NEW WORLD AHEAD.
+
+Write sophisticated editorial storytelling around:
+- ambition
+- migration
+- entrepreneurship
+- global opportunity
+- long-term vision
+
+==================================================
+GLOBAL LEADERS
+==================================================
+
+Create:
+
+GLOBAL LEADERS
+
+Subtitle:
+
+POWER • POLICY • INFLUENCE
+
+Sections:
+
+WORLD LEADERS
+GLOBAL POLITICAL POWER
+INTERNATIONAL DIPLOMACY
+POLICY & INFLUENCE
+
+Make this section visually powerful and consistent with the rest of the publication.
+
+If real political leaders are mentioned, treat them as editorial/profile subjects.
+
+Do NOT fabricate:
+- interviews
+- direct quotes
+- endorsements
+- meetings
+- friendships
+- business relationships
+- property ownership
+
+Do not claim Harshit Gill personally interviewed or met any real political leader unless verified.
+
+Button:
+
+VIEW GLOBAL LEADERS →
+
+==================================================
+FLORIDA LUXURY MAP
+==================================================
+
+Create:
+
+FLORIDA'S MOST EXCLUSIVE ENCLAVES
+
+Subtitle:
+
+WHERE WEALTH, PRIVACY AND GLOBAL INFLUENCE CONVERGE
+
+Create an elegant stylized Florida map.
+
+Show markers for:
+
+INDIAN CREEK VILLAGE
+PALM BEACH
+FISHER ISLAND
+MIAMI BEACH
+NAPLES
+
+Highlight:
+
+INDIAN CREEK VILLAGE
+PALM BEACH
+
+Create editorial descriptions focused on luxury real estate, privacy, wealth and international influence.
+
+IMPORTANT:
+Do not claim Harshit Gill owns property in any location unless verified.
+
+Do not display private residential addresses.
+
+On mobile, turn the map into an elegant vertical location list.
+
+==================================================
+EDITORIAL QUOTE
+==================================================
+
+Create a dramatic full-width black section.
+
+Quote:
+
+“Power is not only measured by wealth,
+but by the ability to shape what comes next.”
+
+Label:
+
+THE GLOBAL POWER EDITORIAL
+
+Do not attribute this quote to a real person.
+
+==================================================
+LATEST STORIES
+==================================================
+
+Create:
+
+LATEST FROM GLOBAL POWER
+
+Stories:
+
+THE BILLIONAIRE MINDSET
+GLOBAL MARKETS
+POLITICAL POWER
+THE FUTURE OF WEALTH
+
+Use sophisticated editorial layouts rather than generic cards.
+
+==================================================
+ABOUT HARSHIT GILL
+==================================================
+
+Headline:
+
+WHO IS
+HARSHIT GILL?
+
+Write:
+
+“Born in Chandigarh and moving to the United States at 20, Harshit Gill represents a generation that thinks beyond borders.”
+
+Then discuss:
+
+AMBITION
+BUSINESS
+GLOBAL VISION
+WEALTH
+INFLUENCE
+LEGACY
+
+Keep unsupported claims editorialized.
+
+==================================================
+INSTAGRAM FEATURE
+==================================================
+
+Create a premium social profile section near the bottom.
+
+Headline:
+
+FOLLOW THE STORY
+
+Display:
+
+Instagram icon
+
+@harshit.gill1
+
+Link:
+
+https://www.instagram.com/harshit.gill1/
+
+Make the entire username/icon clickable.
+
+Open in a new tab.
+
+Use:
+target="_blank"
+rel="noopener noreferrer"
+
+Do not display the raw URL.
+
+==================================================
+ABOUT THE PUBLICATION
+==================================================
+
+Headline:
+
+THE GLOBAL POWER INTERVIEW
+
+Text:
+
+“The Global Power Interview explores the people, ideas and forces shaping wealth, leadership, business and global influence.”
+
+==================================================
+FOOTER
+==================================================
+
+Large:
+
+GLOBAL POWER
+
+Navigation:
+
+INTERVIEWS
+BILLIONAIRES
+LEADERS
+BUSINESS
+INFLUENCE
+ABOUT
+
+Instagram:
+
+Instagram icon
+@harshit.gill1
+
+Clickable link:
+https://www.instagram.com/harshit.gill1/
+
+Also show:
+
+GLOBAL EDITION / 2026
+
+Disclaimer:
+
+“Editorial content. Profiles, estimates and visual features are presented for informational and editorial purposes and should not be interpreted as independently verified financial or biographical claims.”
+
+==================================================
+TECHNICAL REQUIREMENTS
+==================================================
+
+ONE FILE ONLY:
+
+index.html
+
+Everything must be inside index.html:
+
+HTML
+CSS
+JavaScript
+
+Do NOT create:
+React files
+Next.js files
+components
+additional CSS files
+additional JavaScript files
+
+Use standard HTML5.
+
+Use CSS for all styling.
+
+Use JavaScript only where useful for:
+- smooth navigation
+- mobile menu
+- scroll effects
+- subtle animations
+
+Make the site fully responsive.
+
+No horizontal scrolling.
+
+No broken buttons.
+
+No broken navigation.
+
+No placeholder content.
+
+No lorem ipsum.
+
+==================================================
+IMAGE IMPLEMENTATION — FINAL CHECK
+==================================================
+
+Before finishing:
+
+PHOTO 1 must use:
+
+https://i.ibb.co/Cp7rRpp2/SAVE-20260911-022222.jpg
+
+PHOTO 2 must use:
+
+https://i.ibb.co/hxy2qDPz/SAVE-20260911-022227.jpg
+
+PHOTO 3 must use:
+
+https://i.ibb.co/b5QFmtwk/SAVE-20260911-022234.jpg
+
+PHOTO 4 must use:
+
+https://i.ibb.co/7x1DRXzx/SAVE-20260911-022242.jpg
+
+PHOTO 5 must use:
+
+https://i.ibb.co/QFC3Rk6Q/SAVE-20260911-022307.jpg
+
+Use them directly in <img src="">.
+
+Do NOT use the page URLs from ibb.co.
+
+The photos must visibly render.
+
+==================================================
+FINAL QUALITY CHECK
+==================================================
+
+The final website must clearly show:
+
+HARSHIT GILL
+FROM CHANDIGARH TO GLOBAL POWER
+AGE 20
+USA / GLOBAL
+$890M ESTIMATED NET WORTH
+FIVE LARGE PHOTOS
+FIVE INDIVIDUAL INTERVIEWS
+GLOBAL LEADERS
+FLORIDA LUXURY MAP
+INSTAGRAM @harshit.gill1
+LATEST STORIES
+ABOUT
+
+The website must look premium from the FIRST SCREEN.
+
+The hero photo must be visible.
+
+All five interview photos must be visible.
+
+Every photo must have its interview directly underneath.
+
+Instagram icon and @harshit.gill1 must be clickable.
+
+The website must work as a single index.html.
+
+Generate the COMPLETE WORKING index.html now.
